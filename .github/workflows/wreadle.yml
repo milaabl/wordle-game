@@ -27,7 +27,7 @@ jobs:
           # path to your readme file relative to root
           readme: ./README.md
           # tag used to identify wreadle section
-          tag: move
+          tag: wreadle
           # url of the server authorized to create dispatch event
           serverUrl: https://myserver.com/dispatch
 
