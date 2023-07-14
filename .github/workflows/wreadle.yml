@@ -3,7 +3,7 @@ name: 'Wreadle'
 on:
   repository_dispatch:
     # change this
-    types: [move]
+    types: [wreadle]
 
 jobs:
   wordle:
