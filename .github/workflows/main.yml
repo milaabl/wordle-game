@@ -7,6 +7,8 @@ on:
 
 jobs:
   wordle:
+    permissions:
+      contents: write
     runs-on: ubuntu-latest
     steps:
       - name: Cancel Previous Runs
@@ -19,13 +21,13 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Wreadle
-        uses: aryan02420/wreadle@v0.1
+        uses: aryan02420/wordle@v0.1
         id: wreadle
         with:
           # path to your readme file relative to root
           readme: ./README.md
           # tag used to identify wreadle section
-          tag: wreadle
+          tag: move
           # url of the server authorized to create dispatch event
           serverUrl: https://myserver.com/dispatch
 
